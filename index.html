@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Dilyru</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-1">
+                <nav class="header-nav">
+                    <img class="logo" src="dilyru_photos/Logo.svg" alt="Logo">
+
+                    <ul class="header-ul">
+                        <li><a href="#new" class="header-a">Доска объявлений</a></li>
+                        <li><a href="#brend" class="header-a">Популярные бренды</a></li>
+                        <li><a href="#shop" class="header-a">Интернет-магазин Dily.ru</a></li>
+                        <li><a href="#" class="header-a">Скупка</a></li>
+                    </ul>
+
+                    <div class="header-right">
+                        <button onclick="dark()" class="dark-btn">Dark</button>
+                        <button onclick="light()" class="light-btn">Light</button>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <div class="header-2-parend">
+                <div class="left-head2">
+                    <div class="catalog">
+                        <img src="dilyru_photos/burger.svg" alt="burger">
+                        <a class="catalog-a" href="">Каталог товаров</a>
+                    </div>
+
+                    <div class="dostavka">
+                        <img src="dilyru_photos/off.svg" alt="off">
+                        <a class="catalog-a" href="">Доставка и оплата</a>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <img class="search-img" src="dilyru_photos/search.svg" alt="search">
+                    <input class="input" type="search" placeholder="Я хочу купить">
+                    <button onclick="qidir()" class="search-btn">Найти</button>
+                </div>
+
+                <div class="right-head2">
+                    <a class="help-a" href="">Поддержка</a>
+
+                    <div class="logos">
+                        <img src="dilyru_photos/burger12.svg" alt="burger">
+                        <img src="dilyru_photos/like.svg" alt="like">
+                        <img src="dilyru_photos/savathca.svg" alt="savatcha">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="new">
+            <div class="container">
+                <img class="sec1-img" src="dilyru_photos/Frame 119.svg" alt="photo">
+                <button onclick="telegram()" class="info-btn">Подробнее</button>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="section2">
+            <div class="container">
+
+                <div class="father-item">
+                    <p class="prodaj-text">Хиты продаж</p>
+                    <a class="item" href="https://t.me/y_bahodirovich">Смотреть все</a>
+                </div>
+
+                <div id="shop" class="redmi-allcard">
+                    <div id="Xiaomi Redmi" class="redmi-card">
+                        <img src="dilyru_photos/image 23.svg" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Смартфон</p>
+
+                            <p class="model-name">Xiaomi Redmi 4/128</p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">10 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <p id="xato"></p>
+
+                    <div id="Samsung A25" class="redmi-card">
+                        <img class="smartfon" src="dilyru_photos/Samsung.png" alt="Samsung">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Смартфон</p>
+
+                            <p class="model-name">Samsung A25 8/128</p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">15 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div id="Samsung A15" class="redmi-card">
+                        <img class="smartfon" src="dilyru_photos/SamsungA15.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Смартфон</p>
+
+                            <p class="model-name">Samsung A15 8/128 </p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">12 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div id="Samsung A54" class="redmi-card">
+                        <img class="smartfon2" src="dilyru_photos/samsungA54.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Смартфон</p>
+
+                            <p class="model-name">Samsung A54 8/128 </p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">18 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div id="Samsung A55" class="redmi-card">
+                        <img class="smartfon3" src="dilyru_photos/samsungA55.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Смартфон</p>
+
+                            <p class="model-name">Samsung A55 8/256</p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">22 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="section2">
+            <div class="container">
+                <div class="father-item">
+                    <p class="prodaj-text">Новинки</p>
+                    <a class="item" href="https://t.me/y_bahodirovich">Смотреть все</a>
+                </div>
+
+                <div class="redmi-allcard">
+                    <div class="macbook-card">
+                        <img src="./dilyru_photos/Frame 78.svg" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Ноутбук</p>
+
+                            <p class="model-name">Apple MacBook Air 13 M2/8Gb ram </p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">70 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div class="macbook-card">
+                        <img class="noutbook" src="./dilyru_photos/microsoftlaptop.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Ноутбук</p>
+
+                            <p class="model-name">Microsoft Laptop Core I5/8Gb ram</p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">75 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div class="samsung-card">
+                        <img class="noutbook2" src="./dilyru_photos/samsungbook.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Ноутбук</p>
+
+                            <p class="model-name">Samsung Book 4 Core I9/2Tb ram </p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">105 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div class="macbook-card">
+                        <img class="noutbook" src="./dilyru_photos/asus.png" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Ноутбук</p>
+
+                            <p class="model-name">Asus Zephyrus G16 Core I7/16Gb ram</p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">89 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+
+                    <div class="macbook-card">
+                        <img src="./dilyru_photos/Frame 78.svg" alt="redmi">
+
+                        <div class="card-item">
+                            <p class="mahsulot-type">Ноутбук</p>
+
+                            <p class="model-name">Apple MacBook Air 13
+                                золотой </p>
+
+                            <img src="dilyru_photos/Frame 294.svg" alt="color">
+
+                            <div class="price-card">
+                                <p class="price">70 000 ₽</p>
+                                <img src="dilyru_photos/Frame 366.svg" alt="yulduz">
+                            </div>
+
+                            <button onclick="telegram()" class="tovar-btn">Купить <img src="dilyru_photos/savatcha.svg"
+                                    alt="savatcha"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="container">
+                <div class="images">
+                    <img src="dilyru_photos/banner servises.svg" alt="banner">
+                    <img src="dilyru_photos/banner servises (1).svg" alt="banner">
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="container">
+                <img class="new-img" src="dilyru_photos/new-phone.svg" alt="phone">
+                <button onclick="telegram()" class="info-btnn">Купить</button>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="brend" class="sec-brend">
+            <div class="container">
+
+                <div class="father-item">
+                    <p class="prodaj-text">Популярные бренды</p>
+                    <a class="item" href="https://t.me/y_bahodirovich">Смотреть все</a>
+                </div>
+
+                <div class="brends">
+                    <img class="brend" src="dilyru_photos/apple.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/samsung.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/mi.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/honor.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/sony.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/tefal.svg" alt="brend">
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="sec-brend">
+            <div class="container">
+
+                <div class="brends">
+                    <img class="brend" src="dilyru_photos/card1.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/card2.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/card3.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/card4.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/card5.svg" alt="brend">
+                    <img class="brend" src="dilyru_photos/card6.svg" alt="brend">
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="input" class="sec-bg">
+            <div class="container">
+                <div class="sec-email">
+                    <div class="input-item">
+                        <div class="gmail-item">
+                            <h2 class="gmail-h2">Будь первым!</h2>
+                            <p class="gmail-p">Подпишитесь на последние обновления и узнавайте о новинках и специальных
+                                предложениях первыми</p>
+                        </div>
+
+
+                        <div class="gmail-input">
+                            <div class="input-btn">
+                                <input class="input-email" type="email" placeholder="Ваш e-mail">
+                            </div>
+
+                            <div class="label-input">
+                                <input class="input-checkbox" type="checkbox">
+                                <label class="label">Я согласен с условиями обработки <span>персональных данных</span> ,
+                                    а
+                                    также
+                                    с <span>условиями подписки</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button class="patpis-btn">Подписаться</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-1">
+                <div class="footer-left">
+                    <img class="logo" src="dilyru_photos/Logo.svg" alt="Logo">
+                </div>
+
+                <div class="footer-right">
+                    <p id="footer-p">Присоединяйтесь к нам </p>
+                    <img onclick="telegram()" src="dilyru_photos/facebook.svg" alt="logos">
+                    <img onclick="instagram()" src="dilyru_photos/instagram.svg" alt="logos">
+                    <img onclick="telegram()" src="dilyru_photos/Vontakte.svg" alt="logos">
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <ul class="footer-ul">
+                    <li class="footer-li">Доска объявлений</li>
+                    <li><a href="#new" class="footer-a">Объявления</a></li>
+                    <li><a href="#shop" class="footer-a">Магазины</a></li>
+                    <li><a href="#" class="footer-a">Благотворительность</a></li>
+                    <li><a href="#" class="footer-a">Личный кабинет</a></li>
+                </ul>
+
+                <ul class="footer-ul">
+                    <li class="footer-li">Сервисный центр</li>
+                    <li><a href="#" class="footer-a">Что мы чиним</a></li>
+                    <li><a href="#" class="footer-a">Адреса сервисных центров</a></li>
+                </ul>
+
+                <ul class="footer-ul">
+                    <li class="footer-li">Интернет-магазин</li>
+                    <li><a href="#shop" class="footer-a">Каталог товаров</a></li>
+                    <li><a href="#" class="footer-a">Доставка и оплата</a></li>
+                    <li><a href="#" class="footer-a">Корзина</a></li>
+                    <li><a href="#" class="footer-a">Личный кабинет</a></li>
+                    <li><a href="https://t.me/y_bahodirovich" class="footer-a">Контакты</a></li>
+                    <li><a href="#" class="footer-a">Вакансии</a></li>
+                </ul>
+
+                <ul class="footer-ul">
+                    <li class="footer-li">Пользователям</li>
+                    <li><a href="#" class="footer-a">Гарантии</a></li>
+                    <li><a href="#" class="footer-a">Доставка и оплата</a></li>
+                    <li><a href="#" class="footer-a">Служба поддержки</a></li>
+                    <li><a href="#input" class="footer-a">Вопрос-ответ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
